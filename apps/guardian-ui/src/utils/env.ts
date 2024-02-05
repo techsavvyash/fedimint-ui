@@ -4,7 +4,7 @@ type EnvVars = {
 };
 
 export async function getEnv() {
-  const response = await fetch('config.json');
+  const response = await fetch('config/config.json');
   if (!response.ok) {
     throw new Error('Could not find config.json');
   }

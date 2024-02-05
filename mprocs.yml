@@ -11,22 +11,28 @@ procs:
     shell: yarn dev:guardian-ui
     env:
       PORT: '3000'
+      REACT_APP_FM_CONFIG_PATH: config0.json
       BROWSER: none
   guardian-ui-2:
     shell: yarn dev:guardian-ui
     env:
       PORT: '3001'
+      REACT_APP_FM_CONFIG_PATH: config1.json
       BROWSER: none
   guardian-ui-3:
     shell: yarn dev:guardian-ui
     env:
       PORT: '3002'
+      REACT_APP_FM_CONFIG_PATH: config2.json
       BROWSER: none
   guardian-ui-4:
     shell: yarn dev:guardian-ui
     env:
       PORT: '3003'
+      REACT_APP_FM_CONFIG_PATH: config3.json
       BROWSER: none
+  guardian-config-server:
+    shell: yarn dev:guardian-config-server
   gateway-ui:
     shell: yarn dev:gateway-ui
     env:

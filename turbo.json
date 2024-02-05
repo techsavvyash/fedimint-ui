@@ -47,7 +47,8 @@
         "@fedimint/types#build",
         "@fedimint/utils#build",
         "@fedimint/ui#build"
-      ]
+      ],
+      "env": ["REACT_APP_FM_CONFIG_PATH"]
     },
     "@fedimint/gateway-ui#dev": {
       "cache": false,

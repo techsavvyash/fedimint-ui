@@ -3,6 +3,7 @@
   "scripts": {
     "dev:gateway-ui": "turbo run dev --filter=gateway-ui...",
     "dev:guardian-ui": "turbo run dev --filter=guardian-ui...",
+    "dev:guardian-config-server": "npx http-server -o dev_config -p 5000",
     "build": "turbo run build",
     "build:gateway-ui": "turbo run build --filter=gateway-ui...",
     "build:guardian-ui": "turbo run build --filter=guardian-ui...",
