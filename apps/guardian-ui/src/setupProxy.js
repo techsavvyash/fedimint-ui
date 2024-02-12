@@ -2,7 +2,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const config_path = process.env.REACT_APP_DEV_CONFIG_PATH
   ? process.env.REACT_APP_DEV_CONFIG_PATH
-  : 'ws://127.0.0.1';
+  : 'config.json';
 
 module.exports = function (app) {
   console.log(`serving up ${config_path} for frontend`);
